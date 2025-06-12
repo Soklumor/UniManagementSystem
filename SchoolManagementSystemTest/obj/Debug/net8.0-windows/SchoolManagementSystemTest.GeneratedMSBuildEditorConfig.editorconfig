@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SchoolManagementSystemTest
-build_property.ProjectDir = D:\D\NET Program\SchoolManagementSystemTest\SchoolManagementSystemTest\SchoolManagementSystemTest\
+build_property.ProjectDir = D:\D\ISAD-Project\SchoolManagementSystemTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
