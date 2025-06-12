@@ -356,6 +356,7 @@
             // 
             // dgvFinalResult
             // 
+            dgvFinalResult.BackgroundColor = SystemColors.ButtonFace;
             dgvFinalResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvFinalResult.Location = new Point(79, 344);
             dgvFinalResult.Name = "dgvFinalResult";

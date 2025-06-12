@@ -53,7 +53,6 @@
             label14 = new Label();
             label6 = new Label();
             txtStuBirthDate = new TextBox();
-            txtStuBirthAddr = new TextBox();
             txtStuGender = new TextBox();
             txtStuNameEN = new TextBox();
             txtStuNameKH = new TextBox();
@@ -68,13 +67,14 @@
             textStuEnterYear = new TextBox();
             label7 = new Label();
             label16 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)Picture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvStudent).BeginInit();
             SuspendLayout();
             // 
             // Picture
             // 
-            Picture.Location = new Point(839, 52);
+            Picture.Location = new Point(906, 59);
             Picture.Name = "Picture";
             Picture.Size = new Size(106, 120);
             Picture.TabIndex = 124;
@@ -113,7 +113,7 @@
             // 
             btnLogout.BackColor = Color.Firebrick;
             btnLogout.ForeColor = SystemColors.ButtonHighlight;
-            btnLogout.Location = new Point(725, 516);
+            btnLogout.Location = new Point(817, 516);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(129, 47);
             btnLogout.TabIndex = 120;
@@ -124,7 +124,7 @@
             // 
             btnNew.BackColor = Color.FromArgb(255, 128, 0);
             btnNew.ForeColor = SystemColors.ButtonFace;
-            btnNew.Location = new Point(547, 516);
+            btnNew.Location = new Point(610, 516);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(129, 47);
             btnNew.TabIndex = 119;
@@ -135,12 +135,13 @@
             // 
             btnUpdate.BackColor = Color.Navy;
             btnUpdate.ForeColor = SystemColors.ButtonHighlight;
-            btnUpdate.Location = new Point(371, 516);
+            btnUpdate.Location = new Point(400, 516);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(129, 47);
             btnUpdate.TabIndex = 118;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnInsert
             // 
@@ -155,8 +156,9 @@
             // 
             // dgvStudent
             // 
+            dgvStudent.BackgroundColor = SystemColors.ButtonFace;
             dgvStudent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStudent.Location = new Point(483, 194);
+            dgvStudent.Location = new Point(545, 194);
             dgvStudent.Name = "dgvStudent";
             dgvStudent.RowHeadersWidth = 51;
             dgvStudent.Size = new Size(467, 278);
@@ -165,7 +167,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(483, 123);
+            label15.Location = new Point(548, 138);
             label15.Name = "label15";
             label15.Size = new Size(56, 20);
             label15.TabIndex = 115;
@@ -173,44 +175,44 @@
             // 
             // SearchBar
             // 
-            SearchBar.Location = new Point(545, 123);
+            SearchBar.Location = new Point(610, 135);
             SearchBar.Name = "SearchBar";
-            SearchBar.Size = new Size(266, 27);
+            SearchBar.Size = new Size(290, 27);
             SearchBar.TabIndex = 114;
             // 
             // txtStuDepartent
             // 
             txtStuDepartent.Location = new Point(248, 386);
             txtStuDepartent.Name = "txtStuDepartent";
-            txtStuDepartent.Size = new Size(205, 27);
+            txtStuDepartent.Size = new Size(261, 27);
             txtStuDepartent.TabIndex = 113;
             // 
             // txtStuPhone
             // 
             txtStuPhone.Location = new Point(248, 353);
             txtStuPhone.Name = "txtStuPhone";
-            txtStuPhone.Size = new Size(205, 27);
+            txtStuPhone.Size = new Size(261, 27);
             txtStuPhone.TabIndex = 112;
             // 
             // txtStuPatentPhone
             // 
             txtStuPatentPhone.Location = new Point(248, 320);
             txtStuPatentPhone.Name = "txtStuPatentPhone";
-            txtStuPatentPhone.Size = new Size(205, 27);
+            txtStuPatentPhone.Size = new Size(261, 27);
             txtStuPatentPhone.TabIndex = 111;
             // 
             // txtStuEmail
             // 
             txtStuEmail.Location = new Point(248, 287);
             txtStuEmail.Name = "txtStuEmail";
-            txtStuEmail.Size = new Size(205, 27);
+            txtStuEmail.Size = new Size(261, 27);
             txtStuEmail.TabIndex = 110;
             // 
             // txtStuAddr
             // 
             txtStuAddr.Location = new Point(248, 254);
             txtStuAddr.Name = "txtStuAddr";
-            txtStuAddr.Size = new Size(205, 27);
+            txtStuAddr.Size = new Size(261, 27);
             txtStuAddr.TabIndex = 109;
             // 
             // label8
@@ -225,7 +227,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(578, 111);
+            label9.Location = new Point(643, 126);
             label9.Name = "label9";
             label9.Size = new Size(0, 20);
             label9.TabIndex = 107;
@@ -287,42 +289,35 @@
             // 
             txtStuBirthDate.Location = new Point(248, 187);
             txtStuBirthDate.Name = "txtStuBirthDate";
-            txtStuBirthDate.Size = new Size(205, 27);
+            txtStuBirthDate.Size = new Size(261, 27);
             txtStuBirthDate.TabIndex = 100;
-            // 
-            // txtStuBirthAddr
-            // 
-            txtStuBirthAddr.Location = new Point(248, 221);
-            txtStuBirthAddr.Name = "txtStuBirthAddr";
-            txtStuBirthAddr.Size = new Size(205, 27);
-            txtStuBirthAddr.TabIndex = 99;
             // 
             // txtStuGender
             // 
-            txtStuGender.Location = new Point(248, 154);
+            txtStuGender.Location = new Point(248, 152);
             txtStuGender.Name = "txtStuGender";
-            txtStuGender.Size = new Size(205, 27);
+            txtStuGender.Size = new Size(261, 27);
             txtStuGender.TabIndex = 98;
             // 
             // txtStuNameEN
             // 
             txtStuNameEN.Location = new Point(248, 119);
             txtStuNameEN.Name = "txtStuNameEN";
-            txtStuNameEN.Size = new Size(205, 27);
+            txtStuNameEN.Size = new Size(261, 27);
             txtStuNameEN.TabIndex = 97;
             // 
             // txtStuNameKH
             // 
-            txtStuNameKH.Location = new Point(248, 85);
+            txtStuNameKH.Location = new Point(248, 86);
             txtStuNameKH.Name = "txtStuNameKH";
-            txtStuNameKH.Size = new Size(205, 27);
+            txtStuNameKH.Size = new Size(261, 27);
             txtStuNameKH.TabIndex = 96;
             // 
             // txtStudentID
             // 
             txtStudentID.Location = new Point(248, 52);
             txtStudentID.Name = "txtStudentID";
-            txtStudentID.Size = new Size(205, 27);
+            txtStudentID.Size = new Size(261, 27);
             txtStudentID.TabIndex = 95;
             // 
             // label3
@@ -390,7 +385,7 @@
             // 
             textStuEnterYear.Location = new Point(248, 419);
             textStuEnterYear.Name = "textStuEnterYear";
-            textStuEnterYear.Size = new Size(205, 27);
+            textStuEnterYear.Size = new Size(261, 27);
             textStuEnterYear.TabIndex = 127;
             // 
             // label7
@@ -410,12 +405,20 @@
             label16.Size = new Size(0, 20);
             label16.TabIndex = 125;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(248, 220);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(261, 27);
+            dateTimePicker1.TabIndex = 128;
+            // 
             // StudentForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1092, 676);
+            ClientSize = new Size(1140, 676);
+            Controls.Add(dateTimePicker1);
             Controls.Add(textStuEnterYear);
             Controls.Add(label7);
             Controls.Add(label16);
@@ -444,7 +447,6 @@
             Controls.Add(label14);
             Controls.Add(label6);
             Controls.Add(txtStuBirthDate);
-            Controls.Add(txtStuBirthAddr);
             Controls.Add(txtStuGender);
             Controls.Add(txtStuNameEN);
             Controls.Add(txtStuNameKH);
@@ -491,7 +493,6 @@
         private Label label14;
         private Label label6;
         private TextBox txtStuBirthDate;
-        private TextBox txtStuBirthAddr;
         private TextBox txtStuGender;
         private TextBox txtStuNameEN;
         private TextBox txtStuNameKH;
@@ -506,5 +507,6 @@
         private TextBox textStuEnterYear;
         private Label label7;
         private Label label16;
+        private DateTimePicker dateTimePicker1;
     }
 }

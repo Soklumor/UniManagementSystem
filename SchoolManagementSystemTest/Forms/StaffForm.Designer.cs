@@ -48,7 +48,6 @@
             label13 = new Label();
             label14 = new Label();
             label6 = new Label();
-            txtStaBirthDate = new TextBox();
             txtStaRole = new TextBox();
             txtStaGender = new TextBox();
             txtStaNameEN = new TextBox();
@@ -65,6 +64,7 @@
             checkBoxWork = new CheckBox();
             checkBoxStopWork = new CheckBox();
             Picture = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dgvStaff).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Picture).BeginInit();
             SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             btnLogout.BackColor = Color.Firebrick;
             btnLogout.ForeColor = SystemColors.ButtonHighlight;
-            btnLogout.Location = new Point(699, 450);
+            btnLogout.Location = new Point(765, 450);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(129, 47);
             btnLogout.TabIndex = 83;
@@ -84,7 +84,7 @@
             // 
             btnNew.BackColor = Color.FromArgb(255, 128, 0);
             btnNew.ForeColor = SystemColors.ButtonFace;
-            btnNew.Location = new Point(521, 450);
+            btnNew.Location = new Point(567, 450);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(129, 47);
             btnNew.TabIndex = 82;
@@ -95,7 +95,7 @@
             // 
             btnUpdate.BackColor = Color.Navy;
             btnUpdate.ForeColor = SystemColors.ButtonHighlight;
-            btnUpdate.Location = new Point(345, 450);
+            btnUpdate.Location = new Point(368, 450);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(129, 47);
             btnUpdate.TabIndex = 81;
@@ -115,8 +115,9 @@
             // 
             // dgvStaff
             // 
+            dgvStaff.BackgroundColor = SystemColors.ButtonFace;
             dgvStaff.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStaff.Location = new Point(457, 166);
+            dgvStaff.Location = new Point(521, 166);
             dgvStaff.Name = "dgvStaff";
             dgvStaff.RowHeadersWidth = 51;
             dgvStaff.Size = new Size(467, 256);
@@ -125,7 +126,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(462, 102);
+            label15.Location = new Point(526, 102);
             label15.Name = "label15";
             label15.Size = new Size(56, 20);
             label15.TabIndex = 71;
@@ -133,44 +134,44 @@
             // 
             // SearchBar
             // 
-            SearchBar.Location = new Point(524, 102);
+            SearchBar.Location = new Point(588, 102);
             SearchBar.Name = "SearchBar";
-            SearchBar.Size = new Size(266, 27);
+            SearchBar.Size = new Size(288, 27);
             SearchBar.TabIndex = 70;
             // 
             // txtStaSalary
             // 
             txtStaSalary.Location = new Point(227, 365);
             txtStaSalary.Name = "txtStaSalary";
-            txtStaSalary.Size = new Size(205, 27);
+            txtStaSalary.Size = new Size(261, 27);
             txtStaSalary.TabIndex = 68;
             // 
             // txtStaHiredDate
             // 
             txtStaHiredDate.Location = new Point(227, 332);
             txtStaHiredDate.Name = "txtStaHiredDate";
-            txtStaHiredDate.Size = new Size(205, 27);
+            txtStaHiredDate.Size = new Size(261, 27);
             txtStaHiredDate.TabIndex = 67;
             // 
             // txtStaDepartment
             // 
             txtStaDepartment.Location = new Point(227, 299);
             txtStaDepartment.Name = "txtStaDepartment";
-            txtStaDepartment.Size = new Size(205, 27);
+            txtStaDepartment.Size = new Size(261, 27);
             txtStaDepartment.TabIndex = 66;
             // 
             // txtStaPhone
             // 
             txtStaPhone.Location = new Point(227, 266);
             txtStaPhone.Name = "txtStaPhone";
-            txtStaPhone.Size = new Size(205, 27);
+            txtStaPhone.Size = new Size(261, 27);
             txtStaPhone.TabIndex = 65;
             // 
             // txtStaEmail
             // 
             txtStaEmail.Location = new Point(227, 233);
             txtStaEmail.Name = "txtStaEmail";
-            txtStaEmail.Size = new Size(205, 27);
+            txtStaEmail.Size = new Size(261, 27);
             txtStaEmail.TabIndex = 64;
             // 
             // label8
@@ -185,7 +186,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(557, 90);
+            label9.Location = new Point(621, 90);
             label9.Name = "label9";
             label9.Size = new Size(0, 20);
             label9.TabIndex = 62;
@@ -243,46 +244,39 @@
             label6.TabIndex = 56;
             label6.Text = "Role:";
             // 
-            // txtStaBirthDate
-            // 
-            txtStaBirthDate.Location = new Point(227, 166);
-            txtStaBirthDate.Name = "txtStaBirthDate";
-            txtStaBirthDate.Size = new Size(205, 27);
-            txtStaBirthDate.TabIndex = 55;
-            // 
             // txtStaRole
             // 
             txtStaRole.Location = new Point(227, 200);
             txtStaRole.Name = "txtStaRole";
-            txtStaRole.Size = new Size(205, 27);
+            txtStaRole.Size = new Size(261, 27);
             txtStaRole.TabIndex = 54;
             // 
             // txtStaGender
             // 
             txtStaGender.Location = new Point(227, 133);
             txtStaGender.Name = "txtStaGender";
-            txtStaGender.Size = new Size(205, 27);
+            txtStaGender.Size = new Size(261, 27);
             txtStaGender.TabIndex = 53;
             // 
             // txtStaNameEN
             // 
             txtStaNameEN.Location = new Point(227, 98);
             txtStaNameEN.Name = "txtStaNameEN";
-            txtStaNameEN.Size = new Size(205, 27);
+            txtStaNameEN.Size = new Size(261, 27);
             txtStaNameEN.TabIndex = 52;
             // 
             // txtStaNameKH
             // 
             txtStaNameKH.Location = new Point(227, 64);
             txtStaNameKH.Name = "txtStaNameKH";
-            txtStaNameKH.Size = new Size(205, 27);
+            txtStaNameKH.Size = new Size(261, 27);
             txtStaNameKH.TabIndex = 51;
             // 
             // txtStatID
             // 
             txtStatID.Location = new Point(227, 31);
             txtStatID.Name = "txtStatID";
-            txtStatID.Size = new Size(205, 27);
+            txtStatID.Size = new Size(261, 27);
             txtStatID.TabIndex = 50;
             // 
             // label3
@@ -377,18 +371,26 @@
             // 
             // Picture
             // 
-            Picture.Location = new Point(818, 31);
+            Picture.Location = new Point(882, 31);
             Picture.Name = "Picture";
             Picture.Size = new Size(106, 120);
             Picture.TabIndex = 87;
             Picture.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(227, 168);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(261, 27);
+            dateTimePicker1.TabIndex = 88;
             // 
             // StaffForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1050, 567);
+            ClientSize = new Size(1123, 567);
+            Controls.Add(dateTimePicker1);
             Controls.Add(Picture);
             Controls.Add(checkBoxStopWork);
             Controls.Add(checkBoxWork);
@@ -413,7 +415,6 @@
             Controls.Add(label13);
             Controls.Add(label14);
             Controls.Add(label6);
-            Controls.Add(txtStaBirthDate);
             Controls.Add(txtStaRole);
             Controls.Add(txtStaGender);
             Controls.Add(txtStaNameEN);
@@ -456,7 +457,6 @@
         private Label label13;
         private Label label14;
         private Label label6;
-        private TextBox txtStaBirthDate;
         private TextBox txtStaRole;
         private TextBox txtStaGender;
         private TextBox txtStaNameEN;
@@ -473,5 +473,6 @@
         private CheckBox checkBoxWork;
         private CheckBox checkBoxStopWork;
         private PictureBox Picture;
+        private DateTimePicker dateTimePicker1;
     }
 }
