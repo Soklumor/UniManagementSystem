@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\D\\NET Program\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj": {}
+    "D:\\D\\ISAD-Project\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj": {}
   },
   "projects": {
-    "D:\\D\\NET Program\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj": {
+    "D:\\D\\ISAD-Project\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\D\\NET Program\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj",
+        "projectUniqueName": "D:\\D\\ISAD-Project\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj",
         "projectName": "SchoolManagementSystemTest",
-        "projectPath": "D:\\D\\NET Program\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj",
+        "projectPath": "D:\\D\\ISAD-Project\\SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\D\\NET Program\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\SchoolManagementSystemTest\\obj\\",
+        "outputPath": "D:\\D\\ISAD-Project\\SchoolManagementSystemTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
