@@ -443,7 +443,6 @@ public partial class FormResult : Form
                 cmd.ExecuteNonQuery();
             }
         }
-
         modifiedRows.Clear();
         isModified = false;
     }

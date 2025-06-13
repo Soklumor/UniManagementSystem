@@ -459,3 +459,6 @@ D:\D\ISAD-Project\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolMana
 D:\D\ISAD-Project\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.genruntimeconfig.cache
 D:\D\ISAD-Project\SchoolManagementSystemTest\obj\Debug\net8.0-windows\ref\SchoolManagementSystemTest.dll
 >>>>>>> 75983aa5742e58849d50a45122eb65803f138dce
+D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.FinalResultForm.resources
+D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StaffForm.resources
+D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StudentForm.resources
