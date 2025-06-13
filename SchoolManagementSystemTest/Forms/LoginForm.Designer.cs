@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Microsoft.Extensions.DependencyInjection;
 using SchoolManagementSystemTest.Services;
-using SchoolManagementSystemTest.Utilities;
 
 namespace SchoolManagementSystemTest
 {
@@ -15,10 +15,13 @@ namespace SchoolManagementSystemTest
         private Button btnLogin;
 
         private readonly UserService _userService;
+        private readonly IServiceProvider _serviceProvider;  // Added this field
 
-        public LoginForm(UserService userService)
+        // Added IServiceProvider parameter here
+        public LoginForm(UserService userService, IServiceProvider serviceProvider)
         {
             _userService = userService;
+            _serviceProvider = serviceProvider;  // Assigned here
             InitializeComponent();
         }
 
@@ -66,7 +69,7 @@ namespace SchoolManagementSystemTest
             btnLogin.Size = new Size(114, 35);
             btnLogin.Text = "Log In";
             btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += new EventHandler(btnLogin_Click); // Important
+            btnLogin.Click += new EventHandler(btnLogin_Click);
 
             // Form settings
             ClientSize = new Size(644, 280);
@@ -91,12 +94,16 @@ namespace SchoolManagementSystemTest
             if (user != null)
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Logger.Log($"User '{username}' logged in successfully.");
+
+                var formResult = _serviceProvider.GetRequiredService<FormResult>();
+                formResult.Show();
+                this.Hide();
+
+                formResult.FormClosed += (s, args) => this.Close();
             }
             else
             {
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Logger.Log($"Failed login attempt for username '{username}'.");
             }
         }
     }

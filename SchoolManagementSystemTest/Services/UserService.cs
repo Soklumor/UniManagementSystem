@@ -1,5 +1,4 @@
-﻿using SchoolManagementSystemTest.Data;
-using SchoolManagementSystemTest.Models;
+﻿using SchoolManagementSystemTest.Models;
 using System.Linq;
 
 namespace SchoolManagementSystemTest.Services
@@ -12,9 +11,17 @@ namespace SchoolManagementSystemTest.Services
 
         public User Authenticate(string username, string password)
         {
+            Console.WriteLine($"Login attempt: username='{username}', password='{password}'");
+
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
                 return null;
-            return _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
+
+            var user = _context.Users
+                .FirstOrDefault(u => u.Username == username && u.Password == password);
+
+            Console.WriteLine(user != null ? "✅ User found" : "❌ User not found");
+
+            return user;
         }
     }
 }

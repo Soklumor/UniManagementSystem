@@ -4,7 +4,6 @@ using System;
 using System.Windows.Forms;
 using SchoolManagementSystemTest.Forms;
 using SchoolManagementSystemTest.Services;
-using SchoolManagementSystemTest.Data;
 
 namespace SchoolManagementSystemTest
 {
@@ -32,9 +31,14 @@ namespace SchoolManagementSystemTest
 
         private static void ConfigureServices(ServiceCollection services)
         {
+            // Register your forms and services here
             services.AddSingleton<LoginForm>();
-            services.AddSingleton<UserService>(); 
-            services.AddDbContext<AppDbContext>();
+            services.AddSingleton<FormResult>();  // Your exam/result form
+            services.AddSingleton<UserService>();
+
+            // Configure your DbContext with the connection string
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(@"Server=DESKTOP-IBQJ98S\SQLEXPRESS;Database=StudentManagement;Trusted_Connection=True;TrustServerCertificate=True"));
         }
     }
 }
