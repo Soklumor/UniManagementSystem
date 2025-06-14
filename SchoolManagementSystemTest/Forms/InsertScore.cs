@@ -26,7 +26,7 @@ namespace SchoolManagementSystemTest.Forms
             dateTime.CustomFormat = "yyyy-MM-dd";
             dateTime.Value = new DateTime(DateTime.Now.Year - 1, 1, 1);
 
-            // Event bindings
+            // Events
             Load += YourForm_Load;
             dateTime.ValueChanged += selection;
             comboDepartment.SelectedIndexChanged += selection;
@@ -36,31 +36,9 @@ namespace SchoolManagementSystemTest.Forms
             btnSaveScores.Click += BtnSaveScores_Click;
             FormClosing += FormResult_FormClosing;
             dataOne.CellFormatting += dataOne_CellFormatting;
-            dataOne.DataBindingComplete += (s, e) =>
-            {
-                if (dataOne.Columns.Contains("ExamDate"))
-                {
-                    dataOne.Columns["ExamDate"].DefaultCellStyle.Format = "yyyy-MM-dd";
-                }
-            };
-
-            dataOne.CellValueChanged += (s, e) =>
-            {
-                if (e.RowIndex >= 0 && !dataOne.Rows[e.RowIndex].IsNewRow)
-                {
-                    isModified = true;
-                    modifiedRows.Add(e.RowIndex);
-                }
-            };
-
-            dataOne.CurrentCellDirtyStateChanged += (s, e) =>
-            {
-                if (dataOne.IsCurrentCellDirty)
-                {
-                    dataOne.CommitEdit(DataGridViewDataErrorContexts.Commit);
-                }
-            };
-
+            dataOne.DataBindingComplete += FormatExamDate;
+            dataOne.CellValueChanged += TrackModifiedRows;
+            dataOne.CurrentCellDirtyStateChanged += CommitCellEdit;
             dataOne.SelectionChanged += dataselectoinChange;
         }
 
@@ -85,15 +63,15 @@ namespace SchoolManagementSystemTest.Forms
             comboDepartment.DisplayMember = "DepartmentName";
             comboDepartment.ValueMember = "DepartmentID";
 
-            LoadClasses(); // Load classes after setting department
+            LoadClasses();
         }
 
         private void LoadClasses()
         {
-            var conn = HandleConnection.GetConnection();
             if (comboDepartment.SelectedValue == null) return;
-            int selectedDepartmentID = Convert.ToInt32(comboDepartment.SelectedValue);
 
+            int selectedDepartmentID = Convert.ToInt32(comboDepartment.SelectedValue);
+            var conn = HandleConnection.GetConnection();
             SqlDataAdapter adapterClasses = new("SELECT ClassID, ClassName FROM tbClasses WHERE DepartmentID = @deptID", conn);
             adapterClasses.SelectCommand.Parameters.AddWithValue("@deptID", selectedDepartmentID);
 
@@ -120,7 +98,12 @@ namespace SchoolManagementSystemTest.Forms
             adapter.SelectCommand.Parameters.AddWithValue("@FromDate", dateTime.Value);
             adapter.SelectCommand.Parameters.AddWithValue("@DepartmentID", comboDepartment.SelectedValue ?? DBNull.Value);
             adapter.SelectCommand.Parameters.AddWithValue("@ClassID", comboClass.SelectedValue ?? DBNull.Value);
+
+            if (dataSet.Tables.Contains("tbExamScore"))
+                dataSet.Tables["tbExamScore"].Clear();
+
             adapter.Fill(dataSet, "tbExamScore");
+
             dataOne.DataSource = null;
             dataOne.DataSource = dataSet.Tables["tbExamScore"];
             examScoreAdapter = adapter;
@@ -138,6 +121,14 @@ namespace SchoolManagementSystemTest.Forms
             }
         }
 
+        private void FormatExamDate(object? sender, EventArgs e)
+        {
+            if (dataOne.Columns.Contains("ExamDate"))
+            {
+                dataOne.Columns["ExamDate"].DefaultCellStyle.Format = "yyyy-MM-dd";
+            }
+        }
+
         private void dataOne_CellFormatting(object? sender, DataGridViewCellFormattingEventArgs e)
         {
             string[] scoreColumns = { "Score_DataAnalysist", "Score_DataBase", "Score_CSharp", "Score_Network", "Score_WebApp" };
@@ -152,12 +143,38 @@ namespace SchoolManagementSystemTest.Forms
             }
         }
 
+        private void dataselectoinChange(object? sender, EventArgs e)
+        {
+            if (dataOne.CurrentRow is { IsNewRow: false } row)
+            {
+                studentID.Text = row.Cells["StudentID"]?.Value?.ToString() ?? "";
+                studentName.Text = row.Cells["StudentName"]?.Value?.ToString() ?? "";
+            }
+        }
+
+        private void TrackModifiedRows(object? sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && !dataOne.Rows[e.RowIndex].IsNewRow)
+            {
+                isModified = true;
+                modifiedRows.Add(e.RowIndex);
+            }
+        }
+
+        private void CommitCellEdit(object? sender, EventArgs e)
+        {
+            if (dataOne.IsCurrentCellDirty)
+            {
+                dataOne.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
         private void FormResult_FormClosing(object? sender, FormClosingEventArgs e)
         {
             if (!isModified || !HasDataToSave()) return;
 
-            var result = MessageBox.Show("You have unsaved changes.\n\nDo you want to save before closing?", "Unsaved Changes",
-                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            var result = MessageBox.Show("You have unsaved changes.\n\nDo you want to save before closing?",
+                "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Cancel)
             {
@@ -187,10 +204,16 @@ namespace SchoolManagementSystemTest.Forms
                 var row = dataOne.Rows[rowIndex];
                 if (row.IsNewRow) continue;
 
-                string studentId = row.Cells["StudentID"]?.Value?.ToString();
+                string studentId = row.Cells["StudentID"]?.Value?.ToString()?.Trim();
                 if (string.IsNullOrEmpty(studentId)) continue;
 
-                if (!DateTime.TryParse(row.Cells["ExamDate"].Value?.ToString(), out DateTime examDate)) continue;
+                DateTime examDates;
+
+                if (!DateTime.TryParse(row.Cells["ExamDate"]?.Value?.ToString(), out examDates))
+                {
+                    // Use DateTimePicker's date if cell date invalid or empty (likely new insert)
+                    examDates = dateTime.Value.Date;
+                }
 
                 int deptId = Convert.ToInt32(comboDepartment.SelectedValue);
                 int classId = Convert.ToInt32(comboClass.SelectedValue);
@@ -199,7 +222,8 @@ namespace SchoolManagementSystemTest.Forms
                 {
                     if (!dataOne.Columns.Contains(subject)) continue;
 
-                    decimal score = TryParseDecimal(row.Cells[subject].Value);
+                    decimal score = TryParseDecimal(row.Cells[subject]?.Value);
+
                     using var cmd = new SqlCommand("sp_UpsertExamResult", conn)
                     {
                         CommandType = CommandType.StoredProcedure
@@ -209,55 +233,16 @@ namespace SchoolManagementSystemTest.Forms
                     cmd.Parameters.AddWithValue("@DepartmentID", deptId);
                     cmd.Parameters.AddWithValue("@ClassID", classId);
                     cmd.Parameters.AddWithValue("@SubjectID", subjectId);
-                    cmd.Parameters.AddWithValue("@ExamDate", examDate);
+                    cmd.Parameters.AddWithValue("@ExamDate", examDates);
                     cmd.Parameters.AddWithValue("@Score", score);
+
                     cmd.ExecuteNonQuery();
                 }
             }
 
+
             modifiedRows.Clear();
             isModified = false;
-        }
-
-        private void YourForm_Load(object? sender, EventArgs e)
-        {
-            selection(null, null);
-        }
-
-        private void dataselectoinChange(object? sender, EventArgs e)
-        {
-            if (dataOne.CurrentRow is { IsNewRow: false } row)
-            {
-                studentID.Text = row.Cells["StudentID"]?.Value?.ToString() ?? "";
-                studentName.Text = row.Cells["StudentName"]?.Value?.ToString() ?? "";
-            }
-        }
-
-        private void LoadStudentsByClass()
-        {
-            if (comboClass.SelectedValue == null) return;
-
-            int classId = Convert.ToInt32(comboClass.SelectedValue);
-            var conn = HandleConnection.GetConnection();
-            SqlDataAdapter adapter = new("SELECT StudentID, FirstName, LastName FROM tbStudents WHERE ClassID = @classID", conn);
-            adapter.SelectCommand.Parameters.AddWithValue("@classID", classId);
-
-            DataSet studentSet = new();
-            adapter.Fill(studentSet, "FilteredStudents");
-
-            var dt = studentSet.Tables["FilteredStudents"];
-            if (!dt.Columns.Contains("StudentName"))
-            {
-                dt.Columns.Add("StudentName", typeof(string), "FirstName + ' ' + LastName");
-            }
-        }
-
-        private void ComboDepartment_SelectionChangeCommitted(object? sender, EventArgs e) => LoadClasses();
-
-        private void ComboClass_SelectionChangeCommitted(object? sender, EventArgs e)
-        {
-            LoadStudentsByClass();
-            selection(null, null);
         }
 
         private void BtnSaveScores_Click(object? sender, EventArgs e)
@@ -288,6 +273,42 @@ namespace SchoolManagementSystemTest.Forms
         private decimal TryParseDecimal(object? value)
         {
             return decimal.TryParse(value?.ToString(), out decimal result) ? result : 0;
+        }
+
+        private void LoadStudentsByClass()
+        {
+            if (comboClass.SelectedValue == null) return;
+
+            int classId = Convert.ToInt32(comboClass.SelectedValue);
+            var conn = HandleConnection.GetConnection();
+            SqlDataAdapter adapter = new("SELECT StudentID, FirstName, LastName FROM tbStudents WHERE ClassID = @classID", conn);
+            adapter.SelectCommand.Parameters.AddWithValue("@classID", classId);
+
+            DataSet studentSet = new();
+            adapter.Fill(studentSet, "FilteredStudents");
+
+            var dt = studentSet.Tables["FilteredStudents"];
+            if (!dt.Columns.Contains("StudentName"))
+            {
+                dt.Columns.Add("StudentName", typeof(string), "FirstName + ' ' + LastName");
+            }
+        }
+
+        private void ComboDepartment_SelectionChangeCommitted(object? sender, EventArgs e) => LoadClasses();
+        private void ComboClass_SelectionChangeCommitted(object? sender, EventArgs e)
+        {
+            LoadStudentsByClass();
+            selection(null, null);
+        }
+
+        private void YourForm_Load(object? sender, EventArgs e)
+        {
+            selection(null, null);
+        }
+
+        private void InsertScore_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
