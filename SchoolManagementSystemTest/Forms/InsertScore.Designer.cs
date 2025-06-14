@@ -210,6 +210,7 @@
             Name = "InsertScore";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Score";
+            Load += InsertScore_Load;
             ((System.ComponentModel.ISupportInitialize)dataOne).EndInit();
             ResumeLayout(false);
             PerformLayout();

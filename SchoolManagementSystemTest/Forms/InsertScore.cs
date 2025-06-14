@@ -40,11 +40,15 @@ namespace SchoolManagementSystemTest.Forms
             dataOne.CellValueChanged += TrackModifiedRows;
             dataOne.CurrentCellDirtyStateChanged += CommitCellEdit;
             dataOne.SelectionChanged += dataselectoinChange;
+            dataOne.DataError += dataOne_DataError;
+            dataOne.CellBeginEdit += dataOne_CellBeginEdit;
+
         }
 
         private void LoadCombos()
         {
             var conn = HandleConnection.GetConnection();
+
             SqlDataAdapter adapterStudents = new("SELECT StudentID, FirstName, LastName FROM tbStudents", conn);
             adapterStudents.Fill(dataSet, "tbStudents");
 
@@ -72,6 +76,7 @@ namespace SchoolManagementSystemTest.Forms
 
             int selectedDepartmentID = Convert.ToInt32(comboDepartment.SelectedValue);
             var conn = HandleConnection.GetConnection();
+
             SqlDataAdapter adapterClasses = new("SELECT ClassID, ClassName FROM tbClasses WHERE DepartmentID = @deptID", conn);
             adapterClasses.SelectCommand.Parameters.AddWithValue("@deptID", selectedDepartmentID);
 
@@ -92,6 +97,8 @@ namespace SchoolManagementSystemTest.Forms
         private void selection(object? sender, EventArgs e)
         {
             using var conn = HandleConnection.GetConnection();
+
+
             string query = "SELECT * FROM dbo.fn_ExamResultsPivotFiltered(@FromDate, @DepartmentID, @ClassID)";
             using var adapter = new SqlDataAdapter(query, conn);
 
@@ -101,9 +108,7 @@ namespace SchoolManagementSystemTest.Forms
 
             if (dataSet.Tables.Contains("tbExamScore"))
                 dataSet.Tables["tbExamScore"].Clear();
-
             adapter.Fill(dataSet, "tbExamScore");
-
             dataOne.DataSource = null;
             dataOne.DataSource = dataSet.Tables["tbExamScore"];
             examScoreAdapter = adapter;
@@ -173,8 +178,11 @@ namespace SchoolManagementSystemTest.Forms
         {
             if (!isModified || !HasDataToSave()) return;
 
-            var result = MessageBox.Show("You have unsaved changes.\n\nDo you want to save before closing?",
-                "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            var result = MessageBox.Show(
+                "You have unsaved changes.\n\nDo you want to save before closing?",
+                "Unsaved Changes",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Warning);
 
             if (result == DialogResult.Cancel)
             {
@@ -185,34 +193,70 @@ namespace SchoolManagementSystemTest.Forms
                 SaveClosing();
             }
         }
+        private void dataOne_DataError(object? sender, DataGridViewDataErrorEventArgs e)
+{
+    // Suppress the error during editing
+    if (e.Context.HasFlag(DataGridViewDataErrorContexts.Commit) ||
+        e.Context.HasFlag(DataGridViewDataErrorContexts.Parsing))
+    {
+        e.Cancel = true;
+        // Optionally show message AFTER editing is done, like in CellEndEdit
+    }
+}
+
+
+        private Dictionary<int, DateTime> originalExamDates = new Dictionary<int, DateTime>();
+
+        // Call this when the user begins editing a row or cell to store the old ExamDate
+        private void dataOne_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (e.ColumnIndex == dataOne.Columns["ExamDate"].Index)
+            {
+                var row = dataOne.Rows[e.RowIndex];
+                if (!originalExamDates.ContainsKey(e.RowIndex))
+                {
+                    DateTime oldDate;
+                    if (DateTime.TryParse(row.Cells["ExamDate"].Value?.ToString(), out oldDate))
+                    {
+                        originalExamDates[e.RowIndex] = oldDate;
+                    }
+                }
+            }
+        }
 
         private void SaveClosing()
         {
+            dataOne.EndEdit();
+
             using var conn = HandleConnection.GetConnection();
 
             var subjectMap = new Dictionary<string, int>
-            {
-                { "DataAnalysist", 1 },
-                { "DataBase", 2 },
-                { "CSharp", 3 },
-                { "Network", 4 },
-                { "WebApp", 5 }
-            };
+    {
+        { "DataAnalysist", 1 },
+        { "DataBase", 2 },
+        { "CSharp", 3 },
+        { "Network", 4 },
+        { "WebApp", 5 }
+    };
 
             foreach (int rowIndex in modifiedRows)
             {
                 var row = dataOne.Rows[rowIndex];
                 if (row.IsNewRow) continue;
 
-                string studentId = row.Cells["StudentID"]?.Value?.ToString()?.Trim();
+                string? studentId = row.Cells["StudentID"]?.Value?.ToString()?.Trim();
                 if (string.IsNullOrEmpty(studentId)) continue;
 
-                DateTime examDates;
-
-                if (!DateTime.TryParse(row.Cells["ExamDate"]?.Value?.ToString(), out examDates))
+                DateTime newExamDate;
+                if (!DateTime.TryParse(row.Cells["ExamDate"]?.Value?.ToString(), out newExamDate))
                 {
-                    // Use DateTimePicker's date if cell date invalid or empty (likely new insert)
-                    examDates = dateTime.Value.Date;
+                    newExamDate = DateTime.Now.Date; // fallback
+                }
+                newExamDate = newExamDate.Date;
+
+                if (!originalExamDates.TryGetValue(rowIndex, out DateTime oldExamDate))
+                {
+                    oldExamDate = newExamDate; // fallback, or skip update if you want
                 }
 
                 int deptId = Convert.ToInt32(comboDepartment.SelectedValue);
@@ -233,17 +277,19 @@ namespace SchoolManagementSystemTest.Forms
                     cmd.Parameters.AddWithValue("@DepartmentID", deptId);
                     cmd.Parameters.AddWithValue("@ClassID", classId);
                     cmd.Parameters.AddWithValue("@SubjectID", subjectId);
-                    cmd.Parameters.AddWithValue("@ExamDate", examDates);
+                    cmd.Parameters.AddWithValue("@OldExamDate", oldExamDate);
+                    cmd.Parameters.AddWithValue("@NewExamDate", newExamDate);
                     cmd.Parameters.AddWithValue("@Score", score);
 
                     cmd.ExecuteNonQuery();
                 }
             }
 
-
+            originalExamDates.Clear();
             modifiedRows.Clear();
             isModified = false;
         }
+
 
         private void BtnSaveScores_Click(object? sender, EventArgs e)
         {
@@ -281,6 +327,7 @@ namespace SchoolManagementSystemTest.Forms
 
             int classId = Convert.ToInt32(comboClass.SelectedValue);
             var conn = HandleConnection.GetConnection();
+
             SqlDataAdapter adapter = new("SELECT StudentID, FirstName, LastName FROM tbStudents WHERE ClassID = @classID", conn);
             adapter.SelectCommand.Parameters.AddWithValue("@classID", classId);
 
@@ -295,6 +342,7 @@ namespace SchoolManagementSystemTest.Forms
         }
 
         private void ComboDepartment_SelectionChangeCommitted(object? sender, EventArgs e) => LoadClasses();
+
         private void ComboClass_SelectionChangeCommitted(object? sender, EventArgs e)
         {
             LoadStudentsByClass();
@@ -306,9 +354,6 @@ namespace SchoolManagementSystemTest.Forms
             selection(null, null);
         }
 
-        private void InsertScore_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void InsertScore_Load(object sender, EventArgs e) { }
     }
 }
