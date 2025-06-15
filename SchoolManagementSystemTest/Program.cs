@@ -38,12 +38,11 @@ namespace SchoolManagementSystemTest
 
         private static void ConfigureServices(ServiceCollection services)
         {
-            // Register forms and services
             services.AddTransient<LoginForm>();      // Use Transient for fresh login form each time
             services.AddTransient<FormResult>();     // Main form (can use Singleton if you want to persist state)
             services.AddSingleton<UserService>();
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(@"Server=DESKTOP-IBQJ98S\SQLEXPRESS;Database=sms;Trusted_Connection=True;TrustServerCertificate=True"));
+            options.UseSqlServer(HandleConnection.ConnectionString));
         }
     }
 }

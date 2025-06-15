@@ -82,9 +82,9 @@
             logout.BackgroundImage = Properties.Resources.power;
             logout.BackgroundImageLayout = ImageLayout.Zoom;
             logout.Image = Properties.Resources.power;
-            logout.Location = new Point(1088, 10);
+            logout.Location = new Point(1105, 19);
             logout.Name = "logout";
-            logout.Size = new Size(100, 50);
+            logout.Size = new Size(83, 30);
             logout.TabIndex = 21;
             logout.TabStop = false;
             logout.Click += Logout;

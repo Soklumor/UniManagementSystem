@@ -20,7 +20,6 @@ public partial class FormResult : Form
     DataSet dataSet = new DataSet();
     SqlDataAdapter adapter = new();
     private bool isModified = false;
-    private readonly string connString = $"Server=DESKTOP-IBQJ98S\\SQLEXPRESS;Database=sms;Trusted_Connection=true;TrustServerCertificate=true;";
 
     public FormResult()
     {
@@ -66,8 +65,7 @@ public partial class FormResult : Form
     }
     private void comboLoad()
     {
-        using var conn = new SqlConnection(connString);
-        conn.Open();
+        using var conn = HandleConnection.GetConnection();
 
         SqlDataAdapter adapterDepartment = new SqlDataAdapter("SELECT * FROM tbDepartments", conn);
         adapterDepartment.Fill(dataSet, "tbDepartments");
@@ -94,8 +92,7 @@ public partial class FormResult : Form
     private void selection(bool useFilter)
     {
         var results = new List<ExamResultsPivot>();
-        using var conn = new SqlConnection(connString);
-        conn.Open();
+        using var conn = HandleConnection.GetConnection();
         string query = @"
         SELECT * FROM vw_ExamResultsPivot
         WHERE CAST(ExamDate AS DATE) BETWEEN @StartDate AND @EndDate";
@@ -198,8 +195,6 @@ public partial class FormResult : Form
         DisplayFirstRowDetails();
         SetEditableColumns();
     }
-
-
     private void DateFilterChanged(object? sender, EventArgs e)
     {
         if (!dataOne.IsHandleCreated)
@@ -232,8 +227,7 @@ public partial class FormResult : Form
         if (comboDepartment.SelectedValue == null || !(comboDepartment.SelectedValue is int departmentId))
             return;
 
-        using var conn = new SqlConnection(connString);
-        conn.Open();
+        using var conn = HandleConnection.GetConnection();
 
         string query = "SELECT * FROM tbClasses WHERE DepartmentID = @DepartmentID";
 
@@ -396,9 +390,7 @@ public partial class FormResult : Form
 
     private void SaveClosing()
     {
-        using var conn = new SqlConnection(connString);
-        conn.Open();
-
+        using var conn = HandleConnection.GetConnection();
         var subjects = new Dictionary<string, int>
     {
         { "DataAnalysist", 1 },
