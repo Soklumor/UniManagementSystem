@@ -19,26 +19,32 @@ namespace SchoolManagementSystemTest
 
             ApplicationConfiguration.Initialize();
 
-            try
+            while (true)
             {
-                Application.Run(serviceProvider.GetRequiredService<LoginForm>());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Startup Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var loginForm = serviceProvider.GetRequiredService<LoginForm>();
+                var loginResult = loginForm.ShowDialog();
+
+                if (loginResult == DialogResult.OK)
+                {
+                    var mainForm = serviceProvider.GetRequiredService<FormResult>();
+                    Application.Run(mainForm);  // Blocks until mainForm is closed (e.g., by Logout)
+                }
+                else
+                {
+                    break;  // Exit app
+                }
             }
         }
 
         private static void ConfigureServices(ServiceCollection services)
         {
-            // Register your forms and services here
-            services.AddSingleton<LoginForm>();
-            services.AddSingleton<FormResult>();  // Your exam/result form
+            // Register forms and services
+            services.AddTransient<LoginForm>();      // Use Transient for fresh login form each time
+            services.AddTransient<FormResult>();     // Main form (can use Singleton if you want to persist state)
             services.AddSingleton<UserService>();
-
-            // Configure your DbContext with the connection string
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(@"Server=DESKTOP-IBQJ98S\SQLEXPRESS;Database=StudentManagement;Trusted_Connection=True;TrustServerCertificate=True"));
+                options.UseSqlServer(@"Server=DESKTOP-IBQJ98S\SQLEXPRESS;Database=sms;Trusted_Connection=True;TrustServerCertificate=True"));
         }
     }
 }
+

@@ -30,6 +30,7 @@
         {
             panel1 = new Panel();
             btnReload = new Button();
+            logout = new PictureBox();
             label8 = new Label();
             panel3 = new Panel();
             dataOne = new DataGridView();
@@ -52,6 +53,7 @@
             begindate = new DateTimePicker();
             enddate = new DateTimePicker();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logout).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataOne).BeginInit();
             SuspendLayout();
             // 
@@ -59,27 +61,39 @@
             // 
             panel1.BackColor = Color.DarkOrange;
             panel1.Controls.Add(btnReload);
+            panel1.Controls.Add(logout);
             panel1.Controls.Add(label8);
-            panel1.Location = new Point(-1, -12);
+            panel1.Location = new Point(-1, -5);
             panel1.Name = "panel1";
             panel1.Size = new Size(1200, 63);
             panel1.TabIndex = 0;
-
             // 
             // btnReload
             // 
-            btnReload.Location = new Point(29, 16);
+            btnReload.Location = new Point(26, 12);
             btnReload.Name = "btnReload";
             btnReload.Size = new Size(86, 44);
-            btnReload.TabIndex = 32;
+            btnReload.TabIndex = 38;
             btnReload.Text = "Reload";
             btnReload.UseVisualStyleBackColor = true;
+            // 
+            // logout
+            // 
+            logout.BackgroundImage = Properties.Resources.power;
+            logout.BackgroundImageLayout = ImageLayout.Zoom;
+            logout.Image = Properties.Resources.power;
+            logout.Location = new Point(1088, 10);
+            logout.Name = "logout";
+            logout.Size = new Size(100, 50);
+            logout.TabIndex = 21;
+            logout.TabStop = false;
+            logout.Click += Logout;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label8.Location = new Point(549, 21);
+            label8.Location = new Point(516, 19);
             label8.Name = "label8";
             label8.Size = new Size(165, 32);
             label8.TabIndex = 20;
@@ -105,7 +119,7 @@
             // 
             // studentID
             // 
-            studentID.Location = new Point(17, 126);
+            studentID.Location = new Point(13, 126);
             studentID.Multiline = true;
             studentID.Name = "studentID";
             studentID.ReadOnly = true;
@@ -116,7 +130,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(17, 101);
+            label3.Location = new Point(13, 101);
             label3.Name = "label3";
             label3.Size = new Size(94, 21);
             label3.TabIndex = 8;
@@ -126,7 +140,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(17, 468);
+            label4.Location = new Point(13, 468);
             label4.Name = "label4";
             label4.Size = new Size(155, 21);
             label4.TabIndex = 10;
@@ -134,7 +148,7 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(17, 577);
+            btnSave.Location = new Point(13, 577);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(101, 44);
             btnSave.TabIndex = 19;
@@ -145,7 +159,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label10.Location = new Point(17, 349);
+            label10.Location = new Point(13, 349);
             label10.Name = "label10";
             label10.Size = new Size(101, 21);
             label10.TabIndex = 24;
@@ -155,7 +169,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(17, 225);
+            label1.Location = new Point(13, 225);
             label1.Name = "label1";
             label1.Size = new Size(123, 21);
             label1.TabIndex = 26;
@@ -163,7 +177,7 @@
             // 
             // studentName
             // 
-            studentName.Location = new Point(17, 250);
+            studentName.Location = new Point(13, 250);
             studentName.Multiline = true;
             studentName.Name = "studentName";
             studentName.ReadOnly = true;
@@ -192,7 +206,7 @@
             // 
             // btnInsert
             // 
-            btnInsert.Location = new Point(125, 577);
+            btnInsert.Location = new Point(121, 577);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(101, 44);
             btnInsert.TabIndex = 31;
@@ -201,7 +215,7 @@
             // 
             // className
             // 
-            className.Location = new Point(17, 372);
+            className.Location = new Point(13, 372);
             className.Multiline = true;
             className.Name = "className";
             className.ReadOnly = true;
@@ -210,7 +224,7 @@
             // 
             // departmentName
             // 
-            departmentName.Location = new Point(17, 492);
+            departmentName.Location = new Point(13, 492);
             departmentName.Multiline = true;
             departmentName.Name = "departmentName";
             departmentName.ReadOnly = true;
@@ -307,6 +321,7 @@
             Text = "ResultForm";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)logout).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataOne).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -327,7 +342,6 @@
         private TextBox studentName;
         private Label label2;
         private Label label5;
-        private Button btnReload;
         private Button btnInsert;
         private TextBox className;
         private TextBox departmentName;
@@ -337,5 +351,7 @@
         private ComboBox comboClass;
         private DateTimePicker begindate;
         private DateTimePicker enddate;
+        private PictureBox logout;
+        private Button btnReload;
     }
 }

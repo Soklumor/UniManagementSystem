@@ -353,6 +353,11 @@ namespace SchoolManagementSystemTest.Forms
         {
             selection(null, null);
         }
+        private void Logout(object sender, EventArgs e)
+        {
+            SaveClosing();
+            this.Close();
+        }
 
         private void InsertScore_Load(object sender, EventArgs e) { }
     }

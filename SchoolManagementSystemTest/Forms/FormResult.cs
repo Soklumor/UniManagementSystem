@@ -20,7 +20,7 @@ public partial class FormResult : Form
     DataSet dataSet = new DataSet();
     SqlDataAdapter adapter = new();
     private bool isModified = false;
-    private readonly string connString = $"Server=DESKTOP-IBQJ98S\\SQLEXPRESS;Database=StudentManagement;Trusted_Connection=true;TrustServerCertificate=true;";
+    private readonly string connString = $"Server=DESKTOP-IBQJ98S\\SQLEXPRESS;Database=sms;Trusted_Connection=true;TrustServerCertificate=true;";
 
     public FormResult()
     {
@@ -31,7 +31,6 @@ public partial class FormResult : Form
         dataOne.KeyDown += dataOne_KeyDown;
         dataOne.EditMode = DataGridViewEditMode.EditOnEnter;
         btnSave.Click += btnSave_Click;
-        btnReload.Click += Reload;
         btnInsert.Click += changeform;
         this.Load += (s, e) => FocusFirstCell();
         this.FormClosing += FormResult_FormClosing;
@@ -40,9 +39,8 @@ public partial class FormResult : Form
         comboClass.SelectedIndexChanged -= comboClass_SelectedIndexChanged;
         comboClass.SelectedIndexChanged += comboClass_SelectedIndexChanged;
         dataOne.CellValueChanged += DataOne_CellValueChanged;
-
+        btnReload.Click += Reload;
         dataOne.CellValueChanged += (s, e) => isModified = true;
-
         dataOne.CurrentCellDirtyStateChanged += (s, e) =>
         {
             if (dataOne.IsCurrentCellDirty)
@@ -64,7 +62,7 @@ public partial class FormResult : Form
 
     private void Reload(object? sender, EventArgs e)
     {
-        Selection();
+        SearchByDateRange();
     }
     private void comboLoad()
     {
@@ -267,6 +265,7 @@ public partial class FormResult : Form
         if (comboClass.SelectedValue != null)
             SearchByDateRange();
     }
+
 
     private void HideColumns()
     {
@@ -471,15 +470,19 @@ public partial class FormResult : Form
             }
         }
     }
-
-
     private void changeform(object? sender, EventArgs e)
     {
-        this.Hide();
+        SaveClosing();
+        this.Hide(); 
         using (InsertScore insertScore = new InsertScore())
         {
             insertScore.ShowDialog();
         }
         this.Show();
+    }
+    private void Logout(object sender, EventArgs e)
+    {
+        SaveClosing();
+        this.Close();
     }
 }

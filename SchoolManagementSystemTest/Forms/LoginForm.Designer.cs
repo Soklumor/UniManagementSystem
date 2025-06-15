@@ -94,17 +94,14 @@ namespace SchoolManagementSystemTest
             if (user != null)
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                var formResult = _serviceProvider.GetRequiredService<FormResult>();
-                formResult.Show();
-                this.Hide();
-
-                formResult.FormClosed += (s, args) => this.Close();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

@@ -462,3 +462,4 @@ D:\D\ISAD-Project\SchoolManagementSystemTest\obj\Debug\net8.0-windows\ref\School
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.FinalResultForm.resources
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StaffForm.resources
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StudentForm.resources
+D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Properties.Resources.resources
