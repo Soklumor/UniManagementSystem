@@ -57,7 +57,7 @@ public partial class FormResult : Form
         begindate.ValueChanged += DateFilterChanged;
         enddate.ValueChanged += DateFilterChanged;
     }
-    
+
 
     private void Reload(object? sender, EventArgs e)
     {
@@ -465,7 +465,7 @@ public partial class FormResult : Form
     private void changeform(object? sender, EventArgs e)
     {
         SaveClosing();
-        this.Hide(); 
+        this.Hide();
         using (InsertScore insertScore = new InsertScore())
         {
             insertScore.ShowDialog();
@@ -476,5 +476,10 @@ public partial class FormResult : Form
     {
         SaveClosing();
         this.Close();
+    }
+
+    private void FormResult_Load(object sender, EventArgs e)
+    {
+
     }
 }

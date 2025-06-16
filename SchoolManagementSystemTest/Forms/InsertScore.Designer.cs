@@ -113,12 +113,12 @@
             // 
             // logout
             // 
-            logout.BackgroundImage = Properties.Resources.power;
+            logout.BackgroundImage = Properties.Resources.cross1;
             logout.BackgroundImageLayout = ImageLayout.Zoom;
-            logout.Image = Properties.Resources.power;
-            logout.Location = new Point(1077, 7);
+            logout.Cursor = Cursors.Hand;
+            logout.Location = new Point(1116, 23);
             logout.Name = "logout";
-            logout.Size = new Size(100, 50);
+            logout.Size = new Size(29, 21);
             logout.TabIndex = 44;
             logout.TabStop = false;
             logout.Click += Logout;

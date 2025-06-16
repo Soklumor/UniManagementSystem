@@ -463,3 +463,4 @@ D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolMana
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StaffForm.resources
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.StudentForm.resources
 D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Properties.Resources.resources
+D:\AssignmentISAD\SchoolManagementSystemTest\obj\Debug\net8.0-windows\SchoolManagementSystemTest.Forms.FormSchedule.resources

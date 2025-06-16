@@ -81,6 +81,7 @@
             // 
             logout.BackgroundImage = Properties.Resources.power;
             logout.BackgroundImageLayout = ImageLayout.Zoom;
+            logout.Cursor = Cursors.Hand;
             logout.Image = Properties.Resources.power;
             logout.Location = new Point(1105, 19);
             logout.Name = "logout";
@@ -319,6 +320,7 @@
             Name = "FormResult";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ResultForm";
+            Load += FormResult_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)logout).EndInit();

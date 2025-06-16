@@ -23,7 +23,6 @@ namespace SchoolManagementSystemTest
             {
                 var loginForm = serviceProvider.GetRequiredService<LoginForm>();
                 var loginResult = loginForm.ShowDialog();
-
                 if (loginResult == DialogResult.OK)
                 {
                     var mainForm = serviceProvider.GetRequiredService<FormResult>();
@@ -40,6 +39,7 @@ namespace SchoolManagementSystemTest
         {
             services.AddTransient<LoginForm>();      // Use Transient for fresh login form each time
             services.AddTransient<FormResult>();     // Main form (can use Singleton if you want to persist state)
+            services.AddTransient<FormSchedule>();
             services.AddSingleton<UserService>();
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(HandleConnection.ConnectionString));
