@@ -1,93 +1,116 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AssignmentISAD\\",
+  "WorkspaceRootPath": "D:\\C#\\Clone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\insertscore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\enrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\enrollmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\AssignmentISAD\\schoolmanagementsystemtest\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\AssignmentISAD\\schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\handleconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\handleconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\AssignmentISAD\\schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\formresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\AssignmentISAD\\schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\formschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\AssignmentISAD\\schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\models\\examresultspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\formschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\studentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\studentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|D:\\C#\\Clone\\schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\handleconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\handleconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\insertscore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\formresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\formresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\finalresultform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\insertscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\models\\examresultspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\models\\examresultspivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\assignmentisad\\schoolmanagementsystemtest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|d:\\c#\\clone\\schoolmanagementsystemtest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF5A13B-38A1-4FC7-A163-5329876F4440}|SchoolManagementSystemTest\\SchoolManagementSystemTest.csproj|solutionrelative:schoolmanagementsystemtest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -101,110 +124,130 @@
           "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormSchedule.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAewFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T12:08:14.571Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormSchedule.Designer.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:18:34.24Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormSchedule.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs [Design]",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:18:27.02Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FinalResultForm.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:22:24.551Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FinalResultForm.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs [Design]",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T11:12:03.036Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InsertScore.Designer.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T13:01:07.122Z",
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPgVAAAAAAAAAAAgwN8VAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-26T09:57:46.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InsertScore.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "ViewState": "AgIAABEBAAAAAAAAAAAiwGwBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EnrollmentForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.Designer.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.Designer.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.Designer.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.Designer.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAA0wNEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T13:00:53.387Z",
+              "WhenOpened": "2025-06-25T15:17:03.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InsertScore.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\InsertScore.cs [Design]",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.cs [Design]",
+              "Title": "EnrollmentForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T13:00:42.462Z",
+              "WhenOpened": "2025-06-25T15:16:30.928Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "FormSchedule.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.Designer.cs",
+              "ViewState": "AgIAACYBAAAAAAAAAAAqwGgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:18:34.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FinalResultForm.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T10:22:24.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InsertScore.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:01:07.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Services\\UserService.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Services\\UserService.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Services\\UserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T05:43:23.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnrollmentForm.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\EnrollmentForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T15:36:04.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "HandleConnection.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\HandleConnection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -212,24 +255,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormResult.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAYwAcBAAADAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "FormSchedule.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAewFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T08:21:08.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T12:08:14.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
+              "Title": "InsertScore.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAiwGwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:00:53.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormResult.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAYwAcBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:21:08.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "FormResult.Designer.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormResult.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,22 +303,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormResult.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\FormResult.cs [Design]",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormResult.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T08:15:44.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "ExamResultsPivot.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Models\\ExamResultsPivot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -260,11 +315,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Models\\User.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Models\\User.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Models\\User.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Models\\User.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Models\\User.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -272,36 +327,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\LoginForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T07:26:06.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T07:26:06.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Services\\UserService.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Services\\UserService.cs",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T05:43:23.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Program.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Program.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Program.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Program.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Program.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA3wBMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -309,11 +351,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\LoginForm.Designer.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -321,11 +363,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "Logger.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Utilities\\Logger.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Utilities\\Logger.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Utilities\\Logger.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Utilities\\Logger.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Utilities\\Logger.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Utilities\\Logger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -333,11 +375,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Data\\AppDbContext.cs",
               "RelativeToolTip": "SchoolManagementSystemTest\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -345,25 +387,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\LoginForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T02:59:13.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InsertScore.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\InsertScore.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\InsertScore.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\InsertScore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:00:42.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormSchedule.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormSchedule.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormSchedule.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:18:27.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\MainForm.cs",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\MainForm.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\MainForm.cs [Design]",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\MainForm.cs [Design]",
               "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T04:25:48.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\AssignmentISAD\\SchoolManagementSystemTest\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\LoginForm.cs [Design]",
+              "DocumentIndex": 10,
+              "Title": "StaffForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\StaffForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\StaffForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\StaffForm.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\StaffForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T02:59:13.568Z"
+              "WhenOpened": "2025-06-25T14:37:44.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\StudentForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\StudentForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\StudentForm.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\StudentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T14:37:41.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FinalResultForm.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FinalResultForm.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FinalResultForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T11:12:03.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormResult.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystemTest\\Forms\\FormResult.cs",
+              "ToolTip": "D:\\C#\\Clone\\SchoolManagementSystemTest\\Forms\\FormResult.cs [Design]",
+              "RelativeToolTip": "SchoolManagementSystemTest\\Forms\\FormResult.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:15:44.706Z"
             }
           ]
         }
